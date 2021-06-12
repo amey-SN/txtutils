@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+    <body>
+  
+
+  <!-- navbar -->
+
+    <div class="container-fluid p-0">
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href=" ">TxT Procss</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About & Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- main-content -->
+  <section class="main-content">
+      <div class="container">
+        <div class="jumbotron shadow">
+          <h1 class="display-4">Welcome To the best Text Utility service on the internet </h1>
+          <p class="lead">Enter your Text in the below textarea </p>
+      
+  
+        <form action="/process" method="post">{% csrf_token %} 
+          <textarea  style="width: 1000px;" name="text" id="" cols="30" rows="5"></textarea><br>
+
+          <div class="custom-control custom-switch">
+         <input type="checkbox" class="custom-control-input" name="rmvpunc" id="customSwitch1">
+         <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+          </div>
+
+          <div class="custom-control custom-switch">
+          <input type="checkbox" name="capitalize" class="custom-control-input" id="customSwitch2">
+          <label class="custom-control-label" for="customSwitch2">Capitalize All</label>
+          </div>
+
+          <div class="custom-control custom-switch">
+          <input type="checkbox" name="newlinermv" class="custom-control-input" id="customSwitch3">
+          <label class="custom-control-label" for="customSwitch3">Remove New Lines</label>
+          </div>
+
+          <div class="custom-control custom-switch">
+          <input type="checkbox" name="extraspacermv" class="custom-control-input" id="customSwitch4">
+          <label class="custom-control-label" for="customSwitch4">Extra Space Remover</label>
+         
+          </div>
+          <div class="custom-control custom-switch">
+          <input type="checkbox" name="chcounter" class="custom-control-input" id="customSwitch5">
+          <label class="custom-control-label" for="customSwitch5">Character Counter</label>
+          </div>
+
+          
+          <button class="btn btn-primary mt-2" type="submit">Submit</button>
+          </form>
+        </div>
+    </div>
+</section>
+  
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

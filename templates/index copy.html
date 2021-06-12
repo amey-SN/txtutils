@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template1</title>
+</head>
+<body>
+  <h1>Welcome to Text-Utils site </h1>
+  <h2>Enter your test below to get the processed text </h2>
+  <H3>Dont forget to check the Remove Punctuations button in order to remove punctuations and to capitalize </H3>
+    <form action="/process" method="get">
+    <textarea  style="width: 1000px;" name="text" id="" cols="30" rows="10"></textarea><br>
+    <input type="checkbox" name="rmvpunc" >Remove Punctuations<br>
+    <input type="checkbox" name="capitalize" >Capitalize All<br>
+    <input type="checkbox" name="newlinermv" >Remove New Lines <br>
+    <input type="checkbox" name="extraspacermv" >Extra Space Remover<br>
+    <input type="checkbox" name="chcounter" >Character Counter(white spaces Included)<br>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
